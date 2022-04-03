@@ -68,7 +68,7 @@ if __name__ == "__main__":
     print("""\
 ###################################
 #                                 #
-# BOTER - Discord mock Bot Client #
+# BOTER - Discord like Bot Client #
 #                                 #
 ###################################
 
