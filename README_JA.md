@@ -2,12 +2,39 @@
 深夜テンションで作った、DiscordBOT操作用クライアント。
 
 # Usage
-```sh
-python main.py
+1. まず、`temp.setting.json`を参考にして`setting.json`を作成してください。  
+TOKENは複数保存しておくことが可能です。  
+また、`language`の欄には`ja`と入力することで、日本語にできます。
+
+2. `main.py`を実行して、TOKENを選択します。
+
+3. ログインが行われたら、GuildおよびChannelを選択します。
+
+4. メッセージを入力してエンターを押すと送信されます。
+
+5. 再度Guild/Channelを選択しなおすには、`/change`と入力してください。  
+他にも`/help`と入力することで、コマンド一覧が表示されます。  
+また、最初にスラッシュを含むメッセージを送信したい場合は、最初のスラッシュを2回にすることで2文字目からのメッセージが送信されます。  
+- Example
 ```
-まず、main.pyを実行します。  
-次にBotのTOKENを入力します。(そのうちjsonとかにしたいね)  
-すると、ログインが行われ、Guild/Channel選択を行います。  
-Guild/Channelが選択されると、最近20メッセージが表示されます。(ただし時間はUTC。)  
-そしたら、`・Send a message to #channel as bot@1234`と表示されるので、そうしたら送信したいメッセージを入力してエンターを押してください。  
-特にエラーが表示されずに`Sended!`と表示されれば送信されてます。試しに確認してみてください。  
+[/help - ヘルプ表示]
+・#Channel に TestBot@1234としてメッセージを送信
+/help
+
+BOTER - ヘルプ
+
+/help - ヘルプを表示
+/exit - ログアウトする
+/change - サーバー/チャンネルを変更する
+/load - 再度メッセージを読み込む
+
+[/help - ヘルプ表示]
+・#Channel に TestBot@1234としてメッセージを送信
+//<-This is slash!
+# TestBot@1234 04/01 12:34(UTC)
+/<-This is slash!
+
+[/help - ヘルプ表示]
+・#Channel に TestBot@1234としてメッセージを送信
+```
+

@@ -1,0 +1,8 @@
+{
+    "history_limit":20,
+    "language":"en",
+    "tokens":{
+        "token-name-1":TOKEN,
+        "the-second-token":Another TOKEN...
+    }
+}

@@ -2,12 +2,39 @@
 Discord like Bot Client
 
 # Usage
-```sh
-python main.py
+1. first, create a `setting.json` file by referring to `temp.setting.json`.  
+It is possible to save multiple TOKEN.  
+You can also enter `ja` in the `language` field to make it Japanese.
+
+2. Run `main.py` and select TOKEN.
+
+3. after login, select `Guild` and `Channel`.
+
+4. type your message and press enter to send it.
+
+To re-select Guild/Channel again, type `/change`.  
+Another way to get a list of commands is to type `/help`.  
+Also, if you want to send a message containing a slash at the beginning, you can use two initial slashes to send the message starting with the second character.  
+- Example
 ```
-The first, launch main.py.  
-Next, please insert your bot token.  
-Then, you can select Guild and Channel.  
-When you finish making Guild and Channel selections, 20 latest messages are displayed. (But time notation is UTC.)  
-Then, `・Send a message to #channel as bot@1234` is displayed, please insert enter the message you want to send.  
-If error has not occurred, `Sended!` is displayed and BOTER was sent message surely. (If you are concerned, check the channel.)  
+[/help - Show Help]
+・Send a message to #Channel as TestBot@1234
+/help
+
+BOTER - Help
+
+/help - Show this help
+/exit - Logout client
+/change - Change guild/channel
+/load - Reload message history
+
+[/help - Show Help]
+・Send a message to #Channel as TestBot@1234
+//<-This is slash!
+# TestBot@1234 04/01 12:34(UTC)
+/<-This is slash!
+
+[/help - Show Help]
+・Send a message to #Channel as TestBot@1234
+```
+
